@@ -5,9 +5,9 @@
 <ul>
 	
 @foreach ( $posts as $post )
-	<h3 style = 'color: red';>
-		<a href="\blog3\public\articles\{{$post->post_name}}">{{ $post->post_title }}</a></h3>
-  <ul>{{ $post->post_content }}</ul>
+	<p style = 'color: red';>
+		<a href="\blog3old\public\articles\{{$post->post_name}}">{{ $post->post_title }}</a></p>
+ <ul>{{ $post->post_content }}</ul> 
 </ul>
 @endforeach
 

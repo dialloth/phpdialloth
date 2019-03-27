@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html class="no-js" lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -6,23 +6,24 @@
 	<title>Foundation | Welcome</title>
 	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
-<body>
+
 
 	<div class="top-bar">
 		<div class="top-bar-left">
 			<ul class="menu">
-				<li class="menu-text">Notre blog </li>
-				<li><a href="/blog3/public">Home</a></li>
-				<li><a href="/blog3/public/articles">Articles</a></li>
-				<li><a href="/blog3/public/contact">Contacts</a></li>
+			   <li class="menu-text">Notre blog </li> 
+			  <li><a href="/blog3old/public">Home</a></li>
+			  <li><a href="/blog3old/public/articles">Articles</a></li>
+			  <li><a href="/blog3old/public/contact">Contacts</a></li>
 			</ul>
 		</div>
 	</div>
+	<body>
 
 	<div class="callout large primary">
 		<div class="row column text-center">
-			<h1>Blog DCISS 2019 </h1>
-			<h2 class="subheader">Blog en cours de maintenance, patience les gars !</h2>
+			<h1 style = 'color: black';>Blog DCISS 2019 </h1>
+			<h2 class="subheader">Blog en cours de maintenance, patience !</h2>
 		</div>
 	</div>
 	<div class="row medium-8 large-7 columns">
