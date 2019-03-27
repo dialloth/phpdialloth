@@ -2,15 +2,13 @@
 
 @section('content')
 
-<h3 style = 'color: red';>{{$post->post_title }}<small>: Ecrit par {{$post->author->name}} {{$post->post_date}}</small></h3>
+<h3>{{$post->post_title }}<small>: Ecrit par {{$post->author->name}} {{$post->post_date}}</small></h3>
 <img  class="thumb" src="https://newsinafrica.co/wp-content/uploads/2018/01/web.jpg">
   {{ $post->post_content }}
-  <div class="clallut">
-  <ul class = "Menu simple">
+<div class="clallut"> </div>
+    <ul class = "Menu simple"> </ul>
 {{--}}<li><a href="#">Author: {{ $post->post_author }}</a></li>
 {{--<li><a href="#">Comments : aucun commentaire  </a></li> --}}
-
-
     @foreach($post->comments as $comment)
       <div>
         {{$comment->comment_name}}
@@ -34,8 +32,7 @@
             <div class="invalid-feedback">:message</div>') !!}
       </div>
       <div class="form-group">
-        <textarea class="form-control {{ $errors->has('comment_content') ? 'is-invalid' : '' }}"
-                  name="comment_content" id="comment_content" placeholder="Votre commentaire">{{ old('comment_content') }}
+        <textarea class="form-control {{ $errors->has('comment_content') ? 'is-invalid' : '' }}" name="comment_content" id="comment_content" placeholder="Votre commentaire">{{ old('comment_content') }}
         Votre commentaire</textarea> {!! $errors->first('comment_content', '
          <div class="invalid-feedback">:comment</div>') !!}
       </div>
