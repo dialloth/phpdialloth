@@ -25,6 +25,7 @@ class ContactController extends Controller
         $contact->created_at=now();
         $contact->updated_at=now();
         $contact->save();
+        
 
 $Contacts = \App\Contact::all();
         return view('confirm', array(
