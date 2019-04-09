@@ -7,4 +7,5 @@ use Illuminate\Http\Request;
 class PostsController extends Controller
 {
     //
+    
 }
