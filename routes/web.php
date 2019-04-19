@@ -13,10 +13,11 @@
 
 //Route::get('/', function () {
     //return view('welcome');
-//});
+//})
 Route::get('/welcome' , 'HomeController@accueil');
 Route::get('/articles' , 'ArticlesController@index');
 Route::get('/contact' , 'ContactController@create');
+
 Route::get('/articles/{post_name}', 'ArticlesController@show');
 Route::post('/contact' , 'ContactController@store');
 Route::post('comment', 'CommentController@store');
