@@ -2,7 +2,7 @@
 
 @section('content')
 <h2 style = 'color:red';>Ici c'est la page d'accueil </h2>
-<p> Retrouvez <strong><em>les trois derniers articles de mon blog </strong> </em>: </p>
+<p> Retrouvez <strong><em>les trois derniers articles de mon blog </em></strong>: </p>
 @foreach ( $posts as $post )
     <h3 style = 'color: red';>
         <a href="\blog3old\public\articles\{{$post->post_name}}">{{ $post->post_title }}</a></h3>
@@ -83,7 +83,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Se connecter</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>

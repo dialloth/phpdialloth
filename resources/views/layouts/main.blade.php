@@ -12,9 +12,37 @@
 		<div class="top-bar-left">
 			<ul class="menu">
 			   <li class="menu-text">Notre blog </li> 
-			  <li><a href="/blog3old/public">Home</a></li>
+			  <li><a href="/blog3old/public/welcome">Home</a></li>
 			  <li><a href="/blog3old/public/articles">Articles</a></li>
 			  <li><a href="/blog3old/public/contact">Contacts</a></li>
+				<!-- Authentication Links -->
+				@guest
+					<li class="nav-item">
+						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+					</li>
+					@if (Route::has('register'))
+						<li class="nav-item">
+							<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+						</li>
+					@endif
+				@else
+					<li>
+						<a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+							{{ Auth::user()->name }} <span class="caret"></span>
+						</a>
+					</li>
+					<li style="display: ">
+						<a href="{{ route('logout') }}"
+						   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+							{{ __('Logout') }}
+						</a>
+
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+							@csrf
+						</form>
+					</li>
+				@endguest
 			</ul>
 		</div>
 	</div>
