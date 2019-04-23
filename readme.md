@@ -1,8 +1,8 @@
   Bienvenue sur le Blog DevWeb de Diallo Thierno & Kenza  Hadj Said !
 
-#Description du projet :  http://localhost/blog3old/public/login 
+#Description du projet : http://localhost/blog3old/public/login 
 
-DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framework LARAVEL. L’objectif, nous faire découvrir cette technologie à travers un projet concret afin que chaque participant puisse savoir y coder une application basique. Nous, notre projet est composé d’une page d’accueil, d’une page articles et d’une page contact. Ces rubriques sont dynamiques grâce à une base de données (PHPLITE) et au principe d’authentification. Pour avoir accès à l’ensemble au site, l’utilisateur ou visiteur doit préalablement créer son compte et ou s’identifier. 
+DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framework LARAVEL. L’objectif, c'est de nous faire découvrir cette technologie à travers un projet concret afin que chaque participant puisse savoir y coder une application basique. Nous, notre projet est composé d’une page d’accueil, d’une page articles et d’une page contact. Ces rubriques sont dynamiques grâce à une base de données (PHPLITE) et au principe d’authentification. Pour avoir accès à l’ensemble au site, l’utilisateur ou visiteur doit préalablement créer son compte et ou s’identifier. 
 
 #Guide d’installation Laravel: https://laravel.com/docs/5.8)
 
@@ -64,5 +64,4 @@ Le clic sur le titre d’un article vous renvoie sur la page complète de l’ar
 Une page contact permet à l'utulisateur du site de nous soumettre un message. Et une fois le message soumis, vous pouvez voir s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
 
 - **Conclusion
-A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans notre BD du blog. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message s’enregistrent automatiquement sur notre base de données.
-
+A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dansdans la base de données. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message sont automatiquement stockés sur la base de données du blog.
