@@ -64,4 +64,4 @@ Le clic sur le titre d’un article vous renvoie sur la page complète de l’ar
 Une page contact permet à l'utulisateur du site de nous soumettre un message. Et une fois le message soumis, vous pouvez voir s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
 
 - **Conclusion
-A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dansdans la base de données. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message sont automatiquement stockés sur la base de données du blog.
+A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans la base de données. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message sont automatiquement stockés sur la base de données du blog.
