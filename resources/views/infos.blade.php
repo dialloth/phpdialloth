@@ -9,8 +9,8 @@
 
 <h3 style="text-align: center;">Contactez-nous </h3>
 
-<p> <em> Vous avez une question sur nos produits ou une proposition à nous faire ?
- écrivez-nous sur ce <strong> formulaire </strong>. Nos équipes vous répondront dans les plus brefs delais ! </p>
+<p> <em> Vous avez une question ou une proposition à nous faire sur nos produits ou sur nos services?
+Ce <strong> formulaire </strong> est là pour ça ! Nos équipes vous répondront dans les plus brefs delais ! </p>
 
     <form action="{{ url('/contact') }}" method="POST">
         {{ csrf_field() }}

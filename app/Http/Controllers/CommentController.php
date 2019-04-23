@@ -40,6 +40,7 @@ class CommentController extends Controller
         $contact->updated_at=now();
         $contact->save();
         return back();
+        //test
     }
 
     /**
