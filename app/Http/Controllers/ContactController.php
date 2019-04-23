@@ -23,7 +23,7 @@ class ContactController extends Controller
         $contact=new Contact();
         $contact->contact_name=request('contact_name');
         $contact->contact_email=request('contact_email');
-        $contact->contact_message=request('contact_message');
+        $contact->contact_message=request('contact_message ');
         $contact->created_at=now();
         $contact->updated_at=now();
         $contact->save();
