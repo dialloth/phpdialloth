@@ -15,13 +15,14 @@
 			  <li><a href="/blog3old/public/welcome">Home</a></li>
 			  <li><a href="/blog3old/public/articles">Articles</a></li>
 			  <li><a href="/blog3old/public/contact">Contacts</a></li>
+
 				<!-- Authentication Links -->
 				@guest
-					<li class="nav-item">
+					<li class="nav-item text-right" >
 						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
 					</li>
 					@if (Route::has('register'))
-						<li class="nav-item">
+						<li class="nav-item text-right">
 							<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
 						</li>
 					@endif
@@ -45,6 +46,7 @@
 				@endguest
 			</ul>
 		</div>
+	</div>
 	</div>
 	<body style='background-color: aliceblue;'>
 
