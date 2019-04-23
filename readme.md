@@ -48,7 +48,7 @@ Exemple de commande sur le terminal : php artisan migrate & php artisan make:mig
 - Commande à exécuter sur le terminal du projet : php artisan make:auth  
 - Configuration des fichiers «auth» et fonctions « Middleware» dans les pages du site.
 
-**Des tests à faire : Que pouvez-vous tester sur notre blog ?***
+- **Des tests à faire : Que pouvez-vous tester sur notre blog ?***
 
       1- L’authentification et oubli des mot de passe :
 Création d’un compte de connexion pour accéder au site
@@ -63,5 +63,5 @@ Le clic sur le titre d’un article vous renvoie sur la page complète de l’ar
       4- La page contact:
 Une page contact permet à l'utulisateur du site de nous soumettre un message. Et une fois le message soumis, vous pouvez voir s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
 
-**Conclusion*****
+- **Conclusion*****
 A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans notre BD du blog. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message s’enregistrent automatiquement sur notre base de données.
