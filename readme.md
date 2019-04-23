@@ -6,15 +6,15 @@ DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framewo
 
 #Guide d’installation Laravel: https://laravel.com/docs/5.8)
 
-- Le début d’un projet Laravel débute par l’Installation du Composer pour la gestion des dépendances : https ://getcomposer.org
- Avec Laravel, il existe deux manières de le faire :
+- Le début d’un projet Laravel débute par l’Installation du Composer pour la gestion des dépendances : https ://getcomposer.org.
+ - **Avec Laravel, il existe deux manières de le faire :**
 - Via Laravel Installer. Sur le terminal de votre repertoire, taper : composer global require laravel/installer ou
 - Via Composer Create-Project: sur votre terminal taper : composer create-projet – prefer-dist laravel/laravel blog.
 
     #Activer le serveur local
 - Sur le terminal de votre projet, exécuter la commande : php artisan serve. L’URL généré http://localhost:8000 vous permettra ensuite d’afficher votre site sur le navigateur web.
 
-#Quelques fichiers à créer et à modifier lors de chaque implémentation : 
+#Quelques fichiers à créer et à modifier lors de chaque implémentation. Ces modifications ci-dessous sont requises pour faire fonctionner le site :
 
 - routes[routes/web.php]
 - controller[app/http/controller/...]
@@ -63,5 +63,5 @@ Le clic sur le titre d’un article vous renvoie sur la page complète de l’ar
       4- La page contact:
 Une page contact permet à l'utulisateur du site de nous soumettre un message. Et une fois le message soumis, vous pouvez voir s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
 
-- **Conclusion
+- **Conclusion**
 A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans la base de données. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et son message sont automatiquement stockés sur la base de données du blog.
