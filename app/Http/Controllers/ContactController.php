@@ -17,6 +17,8 @@ class ContactController extends Controller
         ));
     }
 
+    
+
     public function store(ContactRequest $request){
         $contact=new Contact();
         $contact->contact_name=request('contact_name');

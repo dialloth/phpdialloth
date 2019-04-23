@@ -9,61 +9,70 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+  Bienvenue sur le Blog DevWeb de Diallo Thierno & Kenza  Hadj Said !
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#Description du projet :  http://localhost/blog3old/public/login 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framework LARAVEL. L’objectif, nous faire découvrir cette technologie à travers un projet concret afin que chaque participant puisse savoir y coder une application basique. Nous, notre projet est composé d’une page d’accueil, d’une page articles et d’une page contact. Ces rubriques sont dynamiques grâce à une base de données (PHPLITE) et au principe d’authentification. Pour avoir accès à l’ensemble au site, l’utilisateur ou visiteur doit préalablement créer son compte et ou s’identifier. 
 
-## Learning Laravel
+![Page de login](./images/accueil.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+#Guide d’installation Laravel: https://laravel.com/docs/5.8)
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+- Le début d’un projet Laravel commence par l’Installation de Composer pour la gestion des dépendances :
+ - https ://getcomposer.org
+- Ensuite deux manières de créer un nouveau projet sur Laravel :
+- Via Laravel Installer : sur le terminal de votre repertoire, taper : composer global require laravel/installer ou Via Composer Create-Project: sur votre terminal taper : composer create-projet – prefer-dist laravel/laravel blog.
 
-## Laravel Sponsors
+**Activer le serveur local** 
+- Sur le terminal de votre projet, exécuter la commande : php artisan serve. L’URL généré http://localhost:8000 vous permettra d’afficher votre site sur le navigateur web.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+#Quelques fichiers à créer et configurer lors des chacunes des implémentations : 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
+- routes[routes/web.php]
+- controller[app/http/controller/...]
+- modèles[app/modèles/..]
+- vues[ressources/views/ welcome.blade.php]
 
-## Contributing
+#IMPLEMENTATION & FONCTIONNALITES:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Afin de personnaliser et dynamiser notre blog, nous avons réalisé quelques implémentations:
 
-## Security Vulnerabilities
+- Création d’une base de données phpLiteAdmin à l’aide des migrations de Laravel :
+ https://laravel.com/docs/5.7/migrations pour créer puis configurer les tables de notre base de données : articles(post),  contacts et  utilisateurs. 
+Exemple de commande sur le terminal : php artisan migrate & php artisan make:migration create_contact_table –create=contact.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Création des fichiers Seeding pour insérer des données fictives dans la BD et tester sa connexion avec le blog:
+  https://laravel.com/docs/4.2/migrations 
 
-## License
+- Commandes à exécuter sur le terminal de votre projet :
+        php artisan make:seeder UsersTableSeeder par exemple pour la table des utilisateurs
+        php artisan migrate
+- Création et ajout d’un formulaire de contact ;
+- Création puis configuration des fichiers DatatbaseSeeder.php et PostFactory.php
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#Création et gestion des commentaires :
+- Création de la migration pour les tables de commentaires :
+   Php artisan make:migration create_comments_table
+- Ajout d’un formulaire et d’un modèle (comment.php) pour permettre à l’utilisateur de poster un commentaire sur l’article de son choix.
+
+#Identification
+- Ajout d’un système d’authentification pour limiter l’accès au blog aux personnes identifiées à travers un compte. https://laravel.com/docs/5.8/authentication 
+- Commande à exécuter sur le terminal du projet : php artisan make:auth  
+- Configuration des fichiers «auth» et fonctions « Middleware» dans les pages du site.
+
+#Des tests à faire : Que pouvez-vous tester sur notre blog ?
+
+                 1- L’authentification et l’oubli des mot de passe :
+**Création d’un compte de connexion pour accéder au site**
+
+                2- L’accès au contenu des articles:
+**Chaque titre d’un article constitue un lien qui renvoi sur le contenu complet de l’article***
+
+               3- Possibilité de laisser des commentaires sur chaque article
+**Le clic sur le titre d’un article vous renvoie sur la page complète de l’article. Et en bas de chaque article, vous avez la possibilité de laisser un commentaire**
+
+               4- La page contact:
+**Une page contact permet aux visiteurs du site de contacter nous contacter. Et une fois le message soumis, va s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
+
+A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans notre BD du blog. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, adresse mail et message s’enregistrent automatiquement sur notre Bases de données.
