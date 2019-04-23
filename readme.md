@@ -51,8 +51,8 @@ Exemple de commande sur le terminal : php artisan migrate & php artisan make:mig
 - **Des tests à faire : Que pouvez-vous tester sur notre blog ?***
 
       1- L’authentification et oubli des mot de passe :
-Création d’un compte de connexion pour accéder au site
-Génération d'un nouveau lien de modification du nouveau de passe. Le lien est disponible dans storage/logs
+- Création d’un compte de connexion pour accéder au site.
+- Génération d'un nouveau lien de modification du nouveau de passe. Le lien est disponible dans storage/logs
 
       2- L’accès au contenu des articles:
 Chaque titre d’un article constitue un lien qui renvoie sur le contenu complet de l’article. Vous pouvez donc cliquer sur les titres des articles pour être rédirigé sur la page single de l'article.
