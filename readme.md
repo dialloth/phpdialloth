@@ -6,11 +6,12 @@ DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framewo
 
 #Guide d’installation Laravel: https://laravel.com/docs/5.8)
 
-- Le début d’un projet Laravel commence par l’Installation du Composer pour la gestion des dépendances : https ://getcomposer.org
+- Le début d’un projet Laravel débute par l’Installation du Composer pour la gestion des dépendances : https ://getcomposer.org
  Avec Laravel, il existe deux manières de le faire :
-- Via Laravel Installer. Sur le terminal de votre repertoire, taper : composer global require laravel/installer ou Via Composer Create-Project: sur votre terminal taper : composer create-projet – prefer-dist laravel/laravel blog.
+- Via Laravel Installer. Sur le terminal de votre repertoire, taper : composer global require laravel/installer ou
+- Via Composer Create-Project: sur votre terminal taper : composer create-projet – prefer-dist laravel/laravel blog.
 
-    **Activer le serveur local** 
+    #Activer le serveur local
 - Sur le terminal de votre projet, exécuter la commande : php artisan serve. L’URL généré http://localhost:8000 vous permettra ensuite d’afficher votre site sur le navigateur web.
 
 #Quelques fichiers à créer et à modifier lors de chaque implémentation : 
@@ -47,7 +48,7 @@ Exemple de commande sur le terminal : php artisan migrate & php artisan make:mig
 - Commande à exécuter sur le terminal du projet : php artisan make:auth  
 - Configuration des fichiers «auth» et fonctions « Middleware» dans les pages du site.
 
-#Des tests à faire : Que pouvez-vous tester sur notre blog ?
+**Des tests à faire : Que pouvez-vous tester sur notre blog ?***
 
       1- L’authentification et oubli des mot de passe :
 Création d’un compte de connexion pour accéder au site
