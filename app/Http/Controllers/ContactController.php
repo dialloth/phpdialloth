@@ -7,6 +7,11 @@ use App\Contact;
 
 class ContactController extends Controller
 {
+    
+    public function __construct()
+    {
+      $this->middleware('auth');
+    }
     // function index(){
     // 	return view('infos');
     // }
@@ -27,6 +32,7 @@ class ContactController extends Controller
         $contact->created_at=now();
         $contact->updated_at=now();
         $contact->save();
+        
 
 $Contacts = \App\Contact::all();
         return view('confirm', array(
