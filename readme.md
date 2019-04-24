@@ -25,14 +25,11 @@ DevWeb est un mini-site réalisé dans le cadre d’une formation sur le Framewo
 Afin de personnaliser et dynamiser le blog, nous avons réalisé quelques implémentations:
 
 - Création d’une base de données phpLiteAdmin à l’aide des migrations de Laravel :
-https://laravel.com/docs/5.7/migrations pour créer puis configurer les tables de notre base de données : articles(post), contacts et  utilisateurs. Exemple de commande à exécuter sur le terminal : php artisan migrate et php artisan make:migration create_contact_table –create=contact.
+https://laravel.com/docs/5.7/migrations. Exemple de commande à exécuter sur le terminal : php artisan make:migration create_contact_table –create=contact.
 
 - Création des fichiers Seeding pour insérer des données fictives dans la BD afin de tester sa connexion avec le blog:
   https://laravel.com/docs/4.2/migrations.
-
-- Commandes à exécuter sur le terminal de votre projet :
-        php artisan make:seeder UsersTableSeeder par exemple pour la table des utilisateurs
-        php artisan migrate
+  
 - Création et ajout d’un formulaire de contact ;
 - Création puis configuration des fichiers DatatbaseSeeder.php et PostFactory.php.
 
