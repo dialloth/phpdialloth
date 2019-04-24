@@ -61,8 +61,8 @@ Le clic sur le titre d’un article vous renvoie sur la page complète de l’ar
       4- La page contact:
 Une page contact permet à l'utilisateur du site de nous soumettre un message. Et une fois le message soumis, vous pouvez alors voir s’afficher la liste de toutes les personnes qui nous ont déjà écrit. ***
 
-- **Mise à jour automatique de la BD : **
-A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans la base de données. Par exemple, si quelqu’un nous soumet un message à travers le formulaire de contact, son nom, son adresse email et son message sont automatiquement stockés sur la base de données du blog. Pareil pour les commentaires, la génération d'un nouveau mot de passe ou la création d'un compte de connexion par un nouvel utilisateur(user).
+- **Mise à jour automatique de la BD :***
+A rappeler que chacune des actions d’un utilisateur constitue un enregistrement de plus dans la base de données. Par exemple, si quelqu’un nous soumet un message sur le formulaire de contact, son nom, son adresse email et son message y sont automatiquement stockés. 
 
-- ** Des difficultés rencontrées ?** :
-Un projet ne devient excitant que s'il vous permet de vous confronter à des nouvelles réalités. Donc, lors de la réalisation de ce blog, nous avons rencontré quelques dificultés techniques comme tout débutant. Mais, l'avantage, c'est que ces difficultés nous ont aussi permis de nous dépasser en allant chercher des solutions ailleurs. Alors, peut-être nous n'avons pas pu parfaitement tout bien faire, néanmoins, ce projet nous a donné les bases solides et nécessaires pour faire des belles choses dans l'avenir sur le Framework Laravel.
+- **Des difficultés rencontrées ?** :
+Un projet ne devient excitant que s'il vous met face à des nouvelles réalités. Donc, lors de la réalisation de ce blog, nous avons rencontré quelques dificultés techniques comme tout débutant. Mais, l'avantage, c'est que ces difficultés nous ont permis de découvrir et de mieux connaitre laravel. Alors, même si nous n'avons pas pu parfaitement tout bien faire, ce projet nous a néanmoins donné les bases solides et nécessaires pour faire encore des belles choses dans l'avenir sur ce Framework.
